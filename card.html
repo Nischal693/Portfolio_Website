@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <style>
+
+        .flex-container{
+            display: flex;
+            position: absolute;
+            display:inline-block;
+            border: px solid black;
+            width: 398px;
+            height: 514px;
+justify-content: center;
+align-items: center;
+align-content: center;
+background-color:white;
+box-shadow: 20px 20px 30px black;
+cursor: crosshair;
+position: relative;
+transition: 5s;
+        }
+
+        .flex-container:hover{
+            transform:rotateX('180');
+
+        }
+        
+        .flex-item2{
+            background-color: black;
+            color: aliceblue;
+            width: 400px;
+            height: 50px;
+            text-align: center;
+            padding-top: 18px;
+        }
+        h2,h1,p{
+            text-align: center;
+            border-color: 2px 2px 4px black;
+            color: white;
+            text-shadow:1px 1px 2px black,0 0 25px blue,0 0 5px darkblue ;
+        }
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 200px;
+            height: 200px;
+            box-shadow: 5px 5px 10px black;
+        }
+        
+        .flex-item1{
+            overflow: hidden;
+            border-right: 10px solid black;
+            white-space: nowrap;
+             animation-name: nischal; 
+animation-duration: 3s;
+animation-delay: 1s;
+animation-fill-mode: forwards;
+ animation-iteration-count: 1; 
+ animation-timing-function: ease-in;
+
+        }
+
+
+
+      @keyframes nischal{
+            from{width: 0%}
+            to{width: 100%}
+        } 
+        a:hover{
+            color: aqua;
+            font-size:xx-large;
+        }
+        a{
+            color: black;
+            
+        }
+ 
+    </style>
+</head>
+<body>
+    <center>
+    <div class="flex-container">
+        <div class="flex-item1">
+            <h2>Seek happiness for others &<br>
+            you wil find it in yours....</h2>
+            </div>
+            <div>
+            <img src="pic4.jpg">
+        <h1>Nischal Moktan</h1>
+        <p>Tribhuvan University</p><br>
+        <a href="https://dribbble.com/"id="icon" target="_blank"><ion-icon name="logo-dribbble"></ion-icon></a>
+        <a href="https://www.twitter.com/" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="https://en.wikipedia.org/wiki/In.com" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+        <a href="https://www.facebook.com/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+        </div>
+        <div class="flex-item2">
+            <details>
+                <summary>CONTACT US:</summary>
+                <option>nischal123321@gmail.com</option>
+            </details></button>
+        </div>
+    </div>
+</center>
+</body>
+</html>
+
+
+

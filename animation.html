@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: black;
+        }
+        .apple{
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-radius: 50%;
+            text-align: center;
+            position: relative;
+animation-name: apple;
+animation-duration: 5s;
+animation-delay: 2s;
+animation-iteration-count: infinite;
+animation-direction: linear;
+animation-timing-function: ease-in-out;
+animation-fill-mode: forwards;
+
+        }
+
+        @keyframes apple{
+            0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow;}
+  50%  {background-color:blue;}
+  75%  {background-color:green;}
+  100% {background-color:red; left:400px; top:400px;}
+}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Animation</h1>
+        <p>Lets start,some shit out of head!!!</p>
+        <div class="apple">
+            
+        </div>
+    </div>
+</body>
+</html>

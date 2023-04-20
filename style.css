@@ -133,3 +133,38 @@ footer{
     padding: 40px;
     position: sticky;
 }
+
+.apple{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.apple ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 10%;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+}
+ 
+.apple li{
+    text-align: center;
+}
+
+.apple a{
+    text-decoration: none;
+    display: block;
+    background-color: black;
+    text-align: center;
+    padding: 8px;
+    color:white;
+    font-size: larger;
+}
+
+.apple li a:hover{
+    background-color: skyblue;
+    transition: 2s ;
+}
