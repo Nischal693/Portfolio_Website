@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Changer</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    .btn{
+        padding: 30px 53px ;
+        margin-bottom: 2px;
+        cursor: pointer;
+    }
+    div{
+        padding-top:200px;
+    }
+    h1,u{
+        color: white;
+    }
+
+</style>
+<script>
+    function my(){
+        document.getElementById('1').style.backgroundColor='red';
+    }
+    function func(){
+        document.getElementById('2').style.backgroundColor='blue';
+    }
+    function fun(){
+        document.getElementById('3').style.backgroundColor='yellow';
+    }
+    function u(){
+        document.getElementById('4').style.backgroundColor='green';
+    }
+    function t(){
+        document.getElementById('5').style.backgroundColor='orange';
+    }
+    function a(){
+        document.getElementById('6').style.backgroundColor='purple';
+    }
+    function b(){
+        document.getElementById('7').style.backgroundColor='aqua';
+    }
+    function c(){
+        document.getElementById('8').style.backgroundColor='grey';
+    }
+    function res(){
+    }
+
+
+</script>
+<body>
+    <center>
+        <u><h1>"COLOR CHANGER"</h1></u>
+<div>
+    <button  onclick="my()" class="btn" id="1"></button>
+    <button  onclick="func()" class="btn" id="2"></button>
+    <button  onclick="fun()" class="btn" id="3"></button>
+    <button  onclick="u()" class="btn" id="4"></button><br>
+    <button  onclick="t()" class="btn" id="5"></button>
+    <button  onclick="a()" class="btn" id="6"></button>
+    <button  onclick="b()" class="btn" id="7"></button>
+    <button  onclick="c()" class="btn" id="8"></button>
+</div><br><br><br><br>
+<button onclick="res()" id="o" class="btn" style="height:8px;">RESET</button>
+<script>
+    var i;
+    function res(){
+        var i;
+        var a=document.getElementsByClassName("btn");
+        for(i=0;i<a.length;i++){
+            a[i].style.backgroundColor='white';
+        }
+    }
+    </script>
+</center>
+
+    
+</body>
+</html>

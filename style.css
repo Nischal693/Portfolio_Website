@@ -13,22 +13,27 @@
 
 .flex-container_nav li{
     float: left;
+    display: inline block;
 
 }
 
 .flex-container_nav li a:link{
+    margin-left: auto;
     display: block;
     color: white;
     text-align: center;
     padding: 25px;
+    border: 1px solid black;
+    border-radius: 35%;
     text-decoration: none; 
     background-color:transparent;
 }
 
 .flex-container_nav li a:hover{
     background-color:gray;
-    font-size: 150%;
+    font-size: 120%;
 text-shadow: 4px 4px 8px #000000;
+transition: 1.4s;
 }
 
 
@@ -164,6 +169,10 @@ footer{
     font-size: larger;
 }
 
+.apple button{
+    border: 1px solid white;
+    border-radius: 20%;
+}
 .apple li a:hover{
     background-color: skyblue;
     transition: 2s ;

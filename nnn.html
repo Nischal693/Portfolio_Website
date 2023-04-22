@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            background-color: black;
+        }
+
+        #apple,#ball {
+            background-color: white;
+            width: 200px;
+            height: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid black;
+            border-radius: 25%;
+        }
+
+        button {
+            display: block;
+            box-sizing: border-box;
+            border: 1px solid white;
+            border-radius: 20%;
+            height: 50px;
+            width: 50px;
+            color: white;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="apple" class="hero">
+
+    </div>
+    <div id="ball" class="hero">
+
+    </div>
+    <button type="button" onclick="myfunction()">
+        Red
+    </button>
+    <script>
+        function myfunction() {
+            document.getElementById('apple').style.backgroundColor = "red";
+        }
+        function myfunction1() {
+            document.getElementById('ball').style.backgroundColor = "blue";
+        }
+    </script>
+       <button type="button" onclick="myfunction1()">
+        blue
+    </button>
+    <button type="button" onclick="myfunction3()">Reset</button>
+    <script>
+    var i;
+    function myfunction3(){
+        var i;
+        var a=document.getElementsByClassName("hero");
+        for(i=0;i<a.length;i++){
+            a[i].style.backgroundColor='white';
+        }
+    }
+    </script>
+         
+</body>
+
+</html>
