@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSIT-2079</title>
+    </head>
+    <style>
+        body{
+            cursor:cell;
+            scroll-behavior: smooth;
+        }
+        table,th,td{
+            border:3pxpx solid black;
+            border-radius: 10px;
+            border-style: ridge;
+            border-color: white;
+            width:500px;
+        }
+        td,th{
+            padding-top:2px;
+            padding-bottom:2px ;
+            padding-left:10px ;
+            padding-right:10px;
+        }
+        .kct{
+            border: 3px solid black;
+            border-color: white;
+        }
+        tr:nth-child(odd){
+            background-color:orange;
+        }
+        tr:nth-child(even){
+            background-color: white;
+            color:black;
+        }
+        dt,label{
+            color: orange;
+        }
+        h3{
+            background-color: white;
+        }
+        .table{
+            cursor: crosshair;
+        }
+        .form{
+            cursor:pointer;
+        }
+        .type{
+            overflow:hidden;
+            border-right:0.2em solid grey;
+            white-space:nowrap;
+            margin:1cm;
+            letter-spacing:0.1em;
+            animation: typing 1s steps(30,end),
+            blink-caret 0.75s step-end infinite;
+            color: grey;
+            border-color: black;
+            text-shadow:1px 1px 2px black,0 0 25px black,0 0 5px black;
+            border-color: 2px 2px 4px black;
+        }
+        @keyframes typing{
+            from{
+                width:0
+            }
+            to{
+                width:100%
+            }
+        }
+        @keyframes blink-caret{
+            from,to{border-color: transparent;}
+            50% { border-color:black;}
+        }
+    </style>
+    <body style="background-color:dodgerblue;">
+        <center>
+            <marquee scrollamount="10" direction="right">
+        <img src="https://media.licdn.com/dms/image/C4E0BAQFGFDiprwGc8Q/company-logo_200_200/0/1594658447492?e=2147483647&v=beta&t=pZr6s-j9jiBAyUq4RADH_a5FilhWX0lyZC2bH1mBt8w" alt="kct logo" width="150" height="80">
+            </marquee>
+            <div class="kct">
+        <h3 style="color:black; text-shadow: 2px 4px 2px orange;" class="type">KATHMANDU COLLEGE OF TECHNOLOGY</h3>
+        <p style="color:aliceblue;background-color:orange;font-size: smaller;">Kathmandu college of technology aslo known as KCT is a TU affiliated college.Various courses are provided by KCT.</p>
+        <p style="color:aliceblue;background-color: orange;font-size: smaller;">KCT is loacted at Lokanthali,Bhaktapur.</p>
+            </div>
+        <img src="https://i0.wp.com/saralnotes.com/wp-content/uploads/2019/11/kct-building.png?fit=510%2C284&ssl=1" alt="kct-building" width="200" height="100" usemap="#kct">
+        <map name="kct">
+          <area shape="rect" coords="49,19,436,245" href="https://kct.edu.np/" target="_blank">
+        </map>
+        <u><p><b>Click above picture : To visit KCT website</b></p></u>
+        <a href="#form"><button>Form</button><br><br></a>
+        <table style="color:aliceblue; text-align: center; font-size:x-small;" class="table">
+            <tr>
+            <th>S.N</th>
+            <th>Teacher's Name</th>
+            <th>Contact</th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>Nishchaya</td>
+                <td>9874631548</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Rohan</td>
+                <td>9843117945</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Sahil</td>
+                <td>9864531898</td>
+            </tr>
+
+    
+        </table>
+    </center>
+        <p style="color:orange; font-size: small;background-color:white;">Courses Available</p>
+        <ul style="color:aliceblue; font-size: x-small;">
+            <li>BCA</li>
+            <li>BSc.CSIT</li>
+        </ul>
+        <p style="color:orange; font-size:small; background-color:white;">Subjects In BSc.CSIT</p>
+        <ol style="color:aliceblue; font-size:x-small;">
+            <li>Physics</li>
+            <li>C-programming</li>
+            <li>Data Logic</li>
+            <li>Mathematics</li>
+            <li>IIT</li>
+        </ol>
+        <p style="color:orange;font-size:small; background-color:white;">KCT's mission and vision</p>
+        <dl style="color:aliceblue;font-size: x-small;">
+            <dt>Mission</dt>
+            <dd>The mission of the Kathmandu College of Technology is to expand human knowledge and benefit society through research integrated with education.</dd><br>
+            <dt>Vision</dt>
+            <dd>The vision of KCT to become a model institute with the rapid developments in Engineering and Technology. Also upgrade the standard of education in backward and rural area.</dd><br>
+            <dt>Aim</dt>
+            <dd>We aim to teach, train, guide, and motivate students to effectively make their way into a challenging and rewarding IT and computing career.</dd><br>
+            <dt>Core Values</dt>
+            <dd>Institutional values influences how we make and carry out decisions, and how we interact with internal and external constituencies.</dd><br>
+        </dl>
+        <center>
+        <form style="color:aliceblue;font-size:x-small;text-align: center; border: 3px solid white; width:200px;" class="form" id="form">
+           <u><p>Form to fill up!</p></u>
+            <label>Firstname:</label><br>
+            <input type="text"><br><br>
+            <label>Lastname:</label><br>
+            <input type="text"><br><br>
+            <label>Course:</label><br>
+            <select style="font-size: x-small;">
+                <option value="BCA">BCA</option>
+                <option value="BSc.CSIT">BSc.CSIT</option>
+             </select><br><br>
+             <label>Semester:</label><br>
+             <select style="font-size: x-small;">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+             </select><br><br>
+            <label>Contact:</label><br>
+            <input type="number" min="0" max="9"><br><br>
+            <input type="button" value="Submit"><br>
+            <label >Male:</label>
+            <input type="checkbox"><br>
+            <label >Female:</label>
+            <input type="checkbox"><br><br>
+            <input type="image" src="https://www.itcollegenepal.com/wp-content/uploads/2021/08/download.jpg.webp" width="150" height="50"><br>
+            <input type="date" style="font-size:xx-small;">
+            <input type="time"  style="font-size:xx-small;"><br><br>
+            <label>Scoresheet:</label>
+            <input type="file" style="font-size: xx-small;"><br><br>
+            <label>Payment:</label><br>
+            <input type="number" value="0" max="50" step="50"><br><br>
+
+        </form><br>
+        <progress max="100"></progress><br><br>
+        <footer style="background-color: white;">
+            Contact us:Kct@gmail.com<br>
+            Telephone:6649674
+        </footer>
+        </center>
+        <marquee>
+        <address style="color: white; text-shadow: 1px 4px 3px black;">
+            Made by: Nishchaya Bhomi
+        </address>
+    </marquee>
+    
+
+    </body>
+</html>
